@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+</head>
+<body>
+    <div>
+    <form>
+        <h2>Novell Services Login (Without Using a Table)</h2>
+        <label for="name">Username: </label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="employment">City of Employment: </label>
+        <input type="text" id="employment" name="employment" required>
+        <br><br>
+        <label for="server">Web Server:</label>
+        <select name="server" id="server">
+            <option value="">Choose a Server</option>
+            <option value="mailservr">Mail Server</option>
+            <option value="databaseservr">Database Server</option>
+            <option value="applicationserver">Application Server</option>
+            <option value="proxyserver">Proxy Server</option>
+            <option value="dnsserver">DNS Server</option>
+            <option value="gameserver">Game Server</option>
+        </select>
+        <br><br>
+        <label for="role">Please Specify Your Role:</label>
+        <input type="radio" id="admin1" name="role" >
+        <label for="admin1">Admin</label>
+        <br>
+        <input type="radio" id="engineer1" name="role">
+        <label for="engineer1">Engineer</label> 
+        <br>
+        <input type="radio" id="manager1" name="role">
+        <label for="manager1">Manager</label>
+        <br>
+        <input type="radio" id="guest1" name="role">
+        <label for="guest1">Guest</label>
+        <br><br>
+        <label>Single Sign-on to the following:</label>
+        <input type="checkbox" id="mail2" name="mail">
+        <label for="mail2">Mail</label>
+        <br>
+        <input type="checkbox" id="payroll2" name="payroll">
+        <label for="payroll2">Payroll</label> 
+        <br>
+        <input type="checkbox" id="selfservice2" name="selfservice">
+        <label for="selfservice2">Self-service</label>
+        <br><br>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>  
+    </div>
+<br><br><br><br>
+
+    <div>
+        <form>
+        <table>
+            <tr>
+                <th colspan="2"><h2>Novell Services Login (Using a Table)</h2></th>
+            </tr>
+            <tr>
+                <td><label for="name1">Username:</label></td>
+                <td><input type="text" id="name1" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="password1">Password: </label></td>
+                <td><input type="password" id="password1" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="employment1">City of Employment: </label></td>
+                <td><input type="text" id="employment1" name="employment" required></td>
+            </tr>
+            <tr>
+                <td><label for="server1">Web Server:</label></td>
+                <td>
+                    <select name="server" id="server1">
+                    <option value="">Choose a Server</option>
+                    <option value="mailservr">Mail Server</option>
+                    <option value="databaseservr">Database Server</option>
+                    <option value="applicationserver">Application Server</option>
+                    <option value="proxyserver">Proxy Server</option>
+                    <option value="dnsserver">DNS Server</option>
+                    <option value="gameserver">Game Server</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4"><label>Please Specify Your Role:</label></td>
+                <td>
+                    <input type="radio" id="admin3" name="role" >
+                    <label for="admin3">Admin</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="engineer3" name="role">
+                    <label for="engineer3">Engineer</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="manager3" name="role">
+                    <label for="manager3">Manager</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="guest3" name="role">
+                    <label for="guest3">Guest</label></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><label>Single Sign-on to the following:</label></td>
+                <td>
+                    <input type="checkbox" id="mail4" name="mail">
+                    <label for="mail4">Mail</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="payroll4" name="payroll">
+                    <label for="payroll4">Payroll</label> </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="selfservice4" name="selfservice">
+                    <label for="selfservice4">Self-service</label>  
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>
